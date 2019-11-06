@@ -1,0 +1,34 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Simple Review
+
+# Model Form Field configuration
+form: $/ironlab/simplereviews/models/simplereview/fields.yaml
+
+# Model Class name
+modelClass: IronLab\SimpleReviews\Models\SimpleReview
+
+# Default redirect location
+defaultRedirect: ironlab/simplereviews/simplereviews
+
+# Create page
+create:
+    title: Create Simple Review
+    redirect: ironlab/simplereviews/simplereviews/update/:id
+    redirectClose: ironlab/simplereviews/simplereviews
+    flashSave: 'ironlab.simplereviews::lang.messages.save'
+
+# Update page
+update:
+    title: Edit Simple Review
+    redirect: ironlab/simplereviews/simplereviews
+    redirectClose: ironlab/simplereviews/simplereviews
+    flashSave: 'ironlab.simplereviews::lang.messages.save'
+    flashDelete: 'ironlab.simplereviews::lang.messages.remove'
+
+# Preview page
+preview:
+    title: Preview Simple Review

@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  publish:
+    type: checkbox
+    label: "Опубликовать"
+    default: false
+  name:
+    type: text
+    label: "Имя"
+    span: full
+    required: true
+  text:
+    type: richeditor
+    label: "Текст отзыва"
+    size: giant
+    span: full
+    required: true

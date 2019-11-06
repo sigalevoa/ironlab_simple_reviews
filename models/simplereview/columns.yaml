@@ -1,0 +1,26 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  name:
+    type: text
+    label: "Имя"
+    span: full
+    sortable: true
+  created_at:
+    label: Создано
+    type: datetime
+    sortable: true
+  updated_at:
+    label: Обновлено
+    type: datetime
+    sortable: true
+  publish:
+    type: partial
+    label: Статус
+    path: $/ironlab/simplereviews/models/simplereview/_public_review.htm
+  unread:
+    type: partial
+    label: "Новые отзывы"
+    path: $/ironlab/simplereviews/models/simplereview/_unread.htm
