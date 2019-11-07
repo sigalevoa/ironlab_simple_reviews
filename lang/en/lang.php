@@ -82,7 +82,7 @@ return [
 
     'simpleReview_component_paginate' => [
         'info' => [
-            'name'          => 'Reviews whith paginate',
+            'name'          => 'Reviews with paginate',
             'description'   => 'Component for page reviews'
         ],
 
