@@ -12,6 +12,22 @@ return [
 		]
 	],
 
+    'models' => [
+        'fields' => [
+            'publish'       => 'Опубликовать',
+            'name'          => 'Имя',
+            'text'          => 'Текст отзыва'
+        ],
+
+        'columns' => [
+            'name'          => 'Имя',
+            'created_at'    => 'Создано',
+            'updated_at'    => 'Обновлено',
+            'publish'       => 'Статус',
+            'unread'        => 'Новые отзывы'
+        ],
+    ],
+
     'simple_review_component' => [
         'info' => [
         	'name' 			=> 'Отзыв',

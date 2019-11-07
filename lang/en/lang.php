@@ -12,6 +12,22 @@ return [
 		]
 	],
 
+    'models' => [
+        'fields' => [
+            'publish'       => 'Publish',
+            'name'          => 'Name',
+            'text'          => 'Review text'
+        ],
+
+        'columns' => [
+            'name'          => 'Name',
+            'created_at'    => 'Created',
+            'updated_at'    => 'Updated',
+            'publish'       => 'Status',
+            'unread'        => 'New reviews'
+        ],
+    ],
+
     'simple_review_component' => [
         'info' => [
         	'name' 			=> 'Review',

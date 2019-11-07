@@ -5,16 +5,16 @@
 fields:
   publish:
     type: checkbox
-    label: "Опубликовать"
+    label: 'ironlab.simplereviews::lang.models.fields.publish'
     default: false
   name:
     type: text
-    label: "Имя"
+    label: 'ironlab.simplereviews::lang.models.fields.name'
     span: full
     required: true
   text:
     type: richeditor
-    label: "Текст отзыва"
+    label: 'ironlab.simplereviews::lang.models.fields.text'
     size: giant
     span: full
     required: true

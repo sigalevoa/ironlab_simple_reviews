@@ -5,22 +5,22 @@
 columns:
   name:
     type: text
-    label: "Имя"
+    label: 'ironlab.simplereviews::lang.models.columns.name'
     span: full
     sortable: true
   created_at:
-    label: Создано
+    label: 'ironlab.simplereviews::lang.models.columns.created_at'
     type: datetime
     sortable: true
   updated_at:
-    label: Обновлено
+    label: 'ironlab.simplereviews::lang.models.columns.updated_at'
     type: datetime
     sortable: true
   publish:
     type: partial
-    label: Статус
+    label: 'ironlab.simplereviews::lang.models.columns.publish'
     path: $/ironlab/simplereviews/models/simplereview/_public_review.htm
   unread:
     type: partial
-    label: "Новые отзывы"
+    label: 'ironlab.simplereviews::lang.models.columns.unread'
     path: $/ironlab/simplereviews/models/simplereview/_unread.htm
