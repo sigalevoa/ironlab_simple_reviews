@@ -1,8 +1,12 @@
+1.0.4:
+    - fix_bags
+    - add_Tiny_MCE
+
 1.0.3:
     - edits
 
 1.0.2:
-      - Add Fields
+      - Add_Fields
       - create_simple_reviews_table.php
       
 1.0.1: First version of SimpleReviews
