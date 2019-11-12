@@ -32,7 +32,7 @@ class SimpleReviewsComponent extends ComponentBase
                 'title'         => 'ironlab.simplereviews::lang.simple_reviews_component.reviewstyle.title',
                 'description'   => 'ironlab.simplereviews::lang.simple_reviews_component.reviewstyle.description',
                 'type'          => 'checkbox',
-                'default'       => 'true',
+                'default'       => 1,
             ]
         ];
     }
@@ -49,8 +49,8 @@ class SimpleReviewsComponent extends ComponentBase
 
     public function onRun() 
     {
-        if ($this->property('reviewstyle') == true) {
-            $this->addCss('assets/css/simplereviews-style.css');
+        if ($this->property('reviewstyle')) {
+            $this->addCss('assets/css/simplereviews-shortlis.css');
         }
 
         if ($this->property('SortOrder') == 'new') {

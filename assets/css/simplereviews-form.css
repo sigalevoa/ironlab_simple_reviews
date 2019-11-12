@@ -1,0 +1,62 @@
+/*Form*/
+.reviews-form {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2rem;
+}
+
+.reviews-form label, .reviews-form label span, .reviews-form label input, .reviews-form label textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.reviews-form label {
+	margin-bottom: 1rem;
+}
+
+.reviews-form label span {
+	color: #212529;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
+
+.reviews-form label span sup {
+	color: red;
+	line-height: 1;
+}
+
+.reviews-form label input {
+	height: 40px;
+}
+
+.reviews-form label input, .reviews-form label textarea {
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	color: #495057;
+}
+
+.reviews-form label textarea {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+button.submit {
+	width: 200px;
+	height: 38px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	background-color: #007bff;
+}
+
+button:focus, .reviews-form label input:focus, .reviews-form label textarea:focus {
+	outline-color: transparent;
+	box-shadow: 0 0 0 1px rgba(23,23,23,0.1);
+}

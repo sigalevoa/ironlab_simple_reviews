@@ -1,8 +1,8 @@
 <div class="reviews-form">
-	<h3>Review</h3>
 	<form 
 		data-request="{{ __SELF__ }}::onSaveReview"
 		data-request-success="$(this).find('input[type=text], textarea').val('');
+							  tinyMCE.activeEditor.setContent('');
 							  $.oc.flashMsg({text: '{{ __SELF__.SuccessSend }}', 'class': 'success', 'interval': 10});"
 		data-request-error="$.oc.flashMsg({text: '{{ __SELF__.ErrorSend }}', 'class': 'error', 'interval': 10});">
 		<input type="hidden" name="reviewpPrt" value="">
@@ -12,9 +12,30 @@
 		</label>
 		<label>
 			<span>Review text<sup>*</sup></span>
-			<textarea name="reviewText" rows="10" value="" required></textarea>
+			<textarea id="review_texteditor" name="reviewText" rows="10" value="" required></textarea>
 		</label>
 		
 		<button class="submit" type="submit">Send</button>
 	</form>
+
+	{% if __SELF__.TinyMCE %}
+		{% put scripts %}
+		    <script>
+		        tinymce.init({
+		            selector: "#review_texteditor",
+		            {% if __SELF__.TinyLoc %}language: '{{ __SELF__.TinyLoc }}',{% endif %}
+		            menubar: false,
+		            toolbar: 'undo redo | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | preview',
+		            plugins: 'preview paste',
+		            paste_as_text: true,
+		            paste_enable_default_filters: false,
+		            setup: function (editor) {
+		                editor.on('change', function () {
+		                    editor.save();
+		                });
+		            }
+		        });
+		    </script>
+		{% endput %}
+	{% endif %}
 </div>

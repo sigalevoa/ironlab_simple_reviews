@@ -49,6 +49,16 @@ return [
         'reviewstyle'	=> [
         	'title'			=> 'Подключить стили',
         	'description'	=> 'Для подключения необходимо в шаблон доавить тег {% styles %}'
+        ],
+
+        'enable_tiny_mce' => [
+            'title'         => 'TinyMCE',
+            'description'    => 'Подключить текстовый редактор TinyMCE'
+        ],
+
+        'lang_tiny_mce' => [
+            'title'         => 'Язык TinyMCE',
+            'description'    => 'Локализация для TinyMCE. По умолчанию enUS'
         ]
     ],
 

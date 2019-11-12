@@ -1,0 +1,308 @@
+Arabic:
+    label: Arabic
+    lang: ar
+
+ArabicSaudiArabia:
+    label: Arabic (Saudi Arabia)
+    lang: ar_SA
+
+Armenian:
+    label: Armenian
+    lang: hy
+
+Azerbaijani:
+    label: Azerbaijani
+    lang: az
+
+Basque:
+    label: Basque
+    lang: eu
+
+Belarusian:
+    label: Belarusian
+    lang: be
+
+BengaliBangladesh:
+    label: Bengali (Bangladesh)
+    lang: bn_BD
+
+Bosnian:
+    label: Bosnian
+    lang: bs
+
+BulgarianBulgaria:
+    label: Bulgarian (Bulgaria)
+    lang: bg_BG
+
+Catalan:
+    label: Catalan
+    lang: ca
+
+ChineseChina:
+    label: Chinese (China)
+    lang: zh_CN
+
+ChineseTaiwan:
+    label: Chinese (Taiwan)
+    lang: zh_TW
+
+Croatian:
+    label: Croatian
+    lang: hr
+
+Czech:
+    label: Czech
+    lang: cs
+
+Danish:
+    label: Danish
+    lang: da
+
+Divehi:
+    label: Divehi
+    lang: dv
+
+Dutch:
+    label: Dutch
+    lang: nl
+
+EnglishCanada:
+    label: English (Canada)
+    lang: en_CA
+
+EnglishUnitedKingdom:
+    label: English (United Kingdom)
+    lang: en_GB
+
+EnglishUSA:
+    label: English (USA)
+    lang: en_US
+
+Estonian:
+    label: Estonian
+    lang: et
+
+Faroese:
+    label: Faroese
+    lang: fo
+
+Finnish:
+    label: Finnish
+    lang: fi
+
+FrenchFrance:
+    label: French (France)
+    lang: fr_FR
+
+GaelicScottish:
+    label: Gaelic, Scottish
+    lang: gd
+
+Galician:
+    label: Galician
+    lang: gl
+
+GeorgianGeorgia:
+    label: Georgian (Georgia)
+    lang: ka_GE
+
+German:
+    label: German
+    lang: de
+
+GermanAustria:
+    label: German (Austria)
+    lang: de_AT
+
+Greek:
+    label: Greek
+    lang: el
+
+HebrewIsrael:
+    label: Hebrew (Israel)
+    lang: he_IL
+
+HindiIndia:
+    label: Hindi (India)
+    lang: hi_IN
+
+HungarianHungary:
+    label: Hungarian (Hungary)
+    lang: hu_HU
+
+IcelandicIceland:
+    label: Icelandic (Iceland)
+    lang: is_IS
+
+Indonesian:
+    label: Indonesian
+    lang: id
+
+Italian:
+    label: Italian
+    lang: it
+
+Japanese:
+    label: Japanese
+    lang: ja
+
+Kabyle:
+    label: Kabyle
+    lang: kab
+
+Kazakh:
+    label: Kazakh
+    lang: kk
+
+KhmerCambodia:
+    label: Khmer (Cambodia) 
+    lang: km_KH
+
+Korean (Korea):
+    label: Korean (Korea)
+    lang: ko_KR
+
+Kurdish:
+    label: Kurdish
+    lang: ku
+
+KurdishIraq:
+    label: Kurdish (Iraq)
+    lang: ku_IQ
+
+Latvian:
+    label: Latvian
+    lang: lv
+
+Lithuanian:
+    label: Lithuanian
+    lang: lt
+
+Luxembourgish:
+    label: Luxembourgish
+    lang: lb
+
+Malayalam:
+    label: Malayalam
+    lang: ml
+
+MalayalamIndia:
+    label: Malayalam (India)
+    lang: ml_IN
+
+MongolianMongolia:
+    label: Mongolian (Mongolia)
+    lang: mn_MN
+
+NorwegianBokmålNorway:
+    label: Norwegian Bokmål (Norway)
+    lang: nb_NO
+
+Persian:
+    label: Persian
+    lang: fa
+
+PersianIran:
+    label: Persian (Iran)
+    lang: fa_IR
+
+Polish:
+    label: Polish
+    lang: pl
+
+PortugueseBrazil:
+    label: Portuguese (Brazil)
+    lang: pt_BR
+
+PortuguesePortugal:
+    label: Portuguese (Portugal)
+    lang: pt_PT
+
+Romanian:
+    label: Romanian
+    lang: ro
+
+Russian:
+    label: Russian
+    lang: ru
+
+Serbian:
+    label: Serbian
+    lang: sr
+
+SinhalaSriLanka:
+    label: Sinhala (Sri Lanka)
+    lang: si_LK
+
+Slovak:
+    label: Slovak
+    lang: sk
+
+SlovenianSlovenia:
+    label: Slovenian (Slovenia)
+    lang: sl_SI
+
+Spanish:
+    label: Spanish
+    lang: es
+
+SpanishMexico:
+    label: Spanish (Mexico)
+    lang: es_MX
+
+SwedishSweden:
+    label: Swedish (Sweden) 
+    lang: sv_SE
+
+Tajik:
+    label: Tajik
+    lang: tg
+
+Tamil:
+    label: Tamil
+    lang: ta
+
+TamilIndia:
+    label: Tamil (India)
+    lang: ta_IN
+
+Tatar:
+    label: Tatar
+    lang: tt
+
+ThaiThailand:
+    label: Thai (Thailand)
+    lang: th_TH
+
+Turkish:
+    label: Turkish
+    lang: tr
+
+TurkishTurkey:
+    label: Turkish (Turkey)
+    lang: tr_TR
+
+Uighur:
+    label: Uighur
+    lang: ug
+
+
+Ukrainian:
+    label: Ukrainian
+    lang: uk
+
+UkrainianUkraine:
+    label: Ukrainian (Ukraine)
+    lang: uk_UA
+
+Vietnamese:
+    label: Vietnamese
+    lang: vi
+
+VietnameseVietNam:
+    label: Vietnamese (Viet Nam)
+    lang: vi_VN
+
+Welsh:
+    label: Welsh
+    lang: cy

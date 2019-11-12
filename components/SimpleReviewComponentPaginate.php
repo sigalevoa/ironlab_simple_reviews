@@ -31,7 +31,7 @@ class SimpleReviewComponentPaginate extends ComponentBase
                 'title'         => 'ironlab.simplereviews::lang.simpleReview_component_paginate.reviewstyle.title',
                 'description'   => 'ironlab.simplereviews::lang.simpleReview_component_paginate.reviewstyle.description',
                 'type'          => 'checkbox',
-                'default'       => 'true',
+                'default'       => 1,
             ]
         ];
     }
@@ -47,8 +47,8 @@ class SimpleReviewComponentPaginate extends ComponentBase
 
     public function onRun() 
     {
-        if ($this->property('reviewstyle') == true) {
-            $this->addCss('assets/css/simplereviews-style.css');
+        if ($this->property('reviewstyle')) {
+            $this->addCss('assets/css/simplereviews-with-paginate.css');
         }
         
         if ($this->property('SortOrder') == 'new') {

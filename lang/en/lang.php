@@ -49,6 +49,16 @@ return [
         'reviewstyle'	=> [
         	'title'			=> 'Add style',
         	'description'	=> 'You need to put the tag {% style %} in the template'
+        ],
+
+        'enable_tiny_mce' => [
+            'title'         => 'TinyMCE',
+            'description'    => 'Enable texteditor TinyMCE'
+        ],
+
+        'lang_tiny_mce' => [
+            'title'         => 'localization TinyMCE',
+            'description'    => 'localization for TinyMCE. default enUS'
         ]
     ],
 
