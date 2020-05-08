@@ -27,6 +27,12 @@ class SimpleReviewComponentPaginate extends ComponentBase
                 'type'          => 'dropdown',
                 'default'       => 'new',
             ],
+            'outputAllReviews' => [
+                'title'         => 'ironlab.simplereviews::lang.simpleReview_component_paginate.outputAllReviews.title',
+                'description'   => 'ironlab.simplereviews::lang.simpleReview_component_paginate.outputAllReviews.description',
+                'type'          => 'checkbox',
+                'default'       => 0,
+            ],
             'reviewstyle' => [
                 'title'         => 'ironlab.simplereviews::lang.simpleReview_component_paginate.reviewstyle.title',
                 'description'   => 'ironlab.simplereviews::lang.simpleReview_component_paginate.reviewstyle.description',
@@ -52,11 +58,20 @@ class SimpleReviewComponentPaginate extends ComponentBase
         }
         
         if ($this->property('SortOrder') == 'new') {
-            $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'desc')->paginate($this->property('items'));
+            if ($this->property('outputAllReviews')) {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::orderBy('created_at', 'desc')->paginate($this->property('items'));
+            } else {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'desc')->paginate($this->property('items'));
+            }
+            
 
         } elseif ($this->property('SortOrder') == 'old') {
-
-            $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'asc')->paginate($this->property('items'));
+            if ($this->property('outputAllReviews')) {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::orderBy('created_at', 'asc')->paginate($this->property('items'));
+            } else {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'asc')->paginate($this->property('items'));
+            }
+            
         }
     }
 }

@@ -28,6 +28,12 @@ class SimpleReviewsComponent extends ComponentBase
                 'type'          => 'dropdown',
                 'default'       => 'new',
             ],
+            'outputAllReviews' => [
+                'title'         => 'ironlab.simplereviews::lang.simple_reviews_component.outputAllReviews.title',
+                'description'   => 'ironlab.simplereviews::lang.simple_reviews_component.outputAllReviews.description',
+                'type'          => 'checkbox',
+                'default'       => 0,
+            ],
             'reviewstyle' => [
                 'title'         => 'ironlab.simplereviews::lang.simple_reviews_component.reviewstyle.title',
                 'description'   => 'ironlab.simplereviews::lang.simple_reviews_component.reviewstyle.description',
@@ -54,14 +60,27 @@ class SimpleReviewsComponent extends ComponentBase
         }
 
         if ($this->property('SortOrder') == 'new') {
-            $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'desc')->take($this->property('items'))->get();
+            if ($this->property('outputAllReviews')) {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::orderBy('created_at', 'desc')->take($this->property('items'))->get();
+            } else {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'desc')->take($this->property('items'))->get();
+            }
 
         } elseif ($this->property('SortOrder') == 'old') {
-
-            $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'asc')->take($this->property('items'))->get();
+            if ($this->property('outputAllReviews')) {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::orderBy('created_at', 'asc')->take($this->property('items'))->get();
+            } else {
+                $this->reviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->orderBy('created_at', 'asc')->take($this->property('items'))->get();
+            }
+            
 
         } elseif ($this->property('SortOrder') == 'random') {
-            $allreviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->get();
+            if ($this->property('outputAllReviews')) {
+                $allreviews = \IronLab\SimpleReviews\Models\SimpleReview::get();
+            } else {
+                $allreviews = \IronLab\SimpleReviews\Models\SimpleReview::where('publish', true)->get();
+            }
+            
             $collection = new Collection($allreviews);
 
             if ( $this->property('items') <= $collection->count() ) {

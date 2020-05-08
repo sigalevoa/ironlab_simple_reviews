@@ -46,6 +46,11 @@ return [
         	'default'		=> 'Review sent error'
         ],
 
+        'outputAllReviews' => [
+            'title'         => 'Output reviews at once',
+            'description'   => 'Output reviews at once without moderation'
+        ],
+
         'reviewstyle'	=> [
         	'title'			=> 'Add style',
         	'description'	=> 'You need to put the tag {% style %} in the template'
@@ -76,6 +81,11 @@ return [
         'sortorder' => [
             'title'         => 'Sort',
             'description'   => 'Sort reviews'
+        ],
+
+        'outputAllReviews' => [
+            'title'         => 'Output reviews at once',
+            'description'   => 'Output reviews at once without moderation'
         ],
 
         'reviewstyle' => [
